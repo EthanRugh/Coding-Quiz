@@ -286,11 +286,20 @@ var endQuiz = function() {
 
 let scoreSub = function() {
     console.log(initials.value);
-    localStorage.setItem("name", JSON.stringify(initials.value));
-    localStorage.setItem("final-score", score);
+    let playerInfo = {
+        playerInitials: initials.value,
+        playerScore: score
+    };
+    
+    localStorage.setItem("info", JSON.stringify(playerInfo));
+    //localStorage.setItem("final-score", score);
     initials.classList.add("initials");
     subBtn.classList.add("initials");
+    console.log(playerInfo);
+    
 };
+
+
 
 makeStartBtn();
 
