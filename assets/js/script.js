@@ -41,27 +41,27 @@ var question1 = function() {
     quiz1.appendChild(quizHolder);
 
     var question1 = document.createElement("h3");
-    question1.textContent = "Here's the first question about js";
+    question1.textContent = "Which of these precedes an id element?";
     question1.className = "question-title";
     quizHolder.appendChild(question1);
 
     var answerA = document.createElement("button");
-    answerA.textContent = "correct answer";
+    answerA.textContent = "#";
     answerA.className = "answer-btn";
     quizHolder.appendChild(answerA);
 
     var answerB = document.createElement("button");
-    answerB.textContent = "wrong answer";
+    answerB.textContent = "/";
     answerB.className = "answer-btn";
     quizHolder.appendChild(answerB);
 
     var answerC = document.createElement("button");
-    answerC.textContent = "wrong answer";
+    answerC.textContent = "$";
     answerC.className = "answer-btn";
     quizHolder.appendChild(answerC);
 
     var answerD = document.createElement("button");
-    answerD.textContent = "wrong answer";
+    answerD.textContent = "*";
     answerD.className = "answer-btn";
     quizHolder.appendChild(answerD);
 
@@ -93,33 +93,33 @@ var question2 = function() {
     quiz2.appendChild(quizHolder);
 
     var question2 = document.createElement("h3");
-    question2.textContent = "Here's the second question about js";
+    question2.textContent = "Which of these will not allow a variable to be changed?";
     question2.className = "question-title";
     quizHolder.appendChild(question2);
 
     var answerA = document.createElement("button");
-    answerA.textContent = "correct answer";
+    answerA.textContent = "var";
     answerA.className = "answer-btn";
     quizHolder.appendChild(answerA);
 
     var answerB = document.createElement("button");
-    answerB.textContent = "wrong answer";
+    answerB.textContent = "let";
     answerB.className = "answer-btn";
     quizHolder.appendChild(answerB);
 
     var answerC = document.createElement("button");
-    answerC.textContent = "wrong answer";
+    answerC.textContent = "const";
     answerC.className = "answer-btn";
     quizHolder.appendChild(answerC);
 
     var answerD = document.createElement("button");
-    answerD.textContent = "wrong answer";
+    answerD.textContent = "none of the above";
     answerD.className = "answer-btn";
     quizHolder.appendChild(answerD);
 
-    answerA.addEventListener("click", scoreAdd2);
+    answerA.addEventListener("click", timeSub2);
     answerB.addEventListener("click", timeSub2);
-    answerC.addEventListener("click", timeSub2);
+    answerC.addEventListener("click", scoreAdd2);
     answerD.addEventListener("click", timeSub2);
 }
 
@@ -141,27 +141,27 @@ var question3 = function() {
     quiz3.appendChild(quizHolder);
 
     var question3 = document.createElement("h3");
-    question3.textContent = "Here's the third question about js";
+    question3.textContent = "Which of these can be used to add a value to a variable?";
     question3.className = "question-title";
     quizHolder.appendChild(question3);
 
     var answerA = document.createElement("button");
-    answerA.textContent = "correct answer";
+    answerA.textContent = "++";
     answerA.className = "answer-btn";
     quizHolder.appendChild(answerA);
 
     var answerB = document.createElement("button");
-    answerB.textContent = "wrong answer";
+    answerB.textContent = "plusOne";
     answerB.className = "answer-btn";
     quizHolder.appendChild(answerB);
 
     var answerC = document.createElement("button");
-    answerC.textContent = "wrong answer";
+    answerC.textContent = "+one";
     answerC.className = "answer-btn";
     quizHolder.appendChild(answerC);
 
     var answerD = document.createElement("button");
-    answerD.textContent = "wrong answer";
+    answerD.textContent = "add2toVar";
     answerD.className = "answer-btn";
     quizHolder.appendChild(answerD);
 
@@ -189,33 +189,33 @@ var question4 = function() {
     quiz4.appendChild(quizHolder);
 
     var question4 = document.createElement("h3");
-    question4.textContent = "Here's the fourth question about js";
+    question4.textContent = "Which of these is the proper syntax to reference an element in HTML?";
     question4.className = "question-title";
     quizHolder.appendChild(question4);
 
     var answerA = document.createElement("button");
-    answerA.textContent = "correct answer";
+    answerA.textContent = "Document.querySelector";
     answerA.className = "answer-btn";
     quizHolder.appendChild(answerA);
 
     var answerB = document.createElement("button");
-    answerB.textContent = "wrong answer";
+    answerB.textContent = "document,querySelector";
     answerB.className = "answer-btn";
     quizHolder.appendChild(answerB);
 
     var answerC = document.createElement("button");
-    answerC.textContent = "wrong answer";
+    answerC.textContent = "document.querySelector";
     answerC.className = "answer-btn";
     quizHolder.appendChild(answerC);
 
     var answerD = document.createElement("button");
-    answerD.textContent = "wrong answer";
+    answerD.textContent = "document.Queryselector";
     answerD.className = "answer-btn";
     quizHolder.appendChild(answerD);
 
-    answerA.addEventListener("click", scoreAdd4);
+    answerA.addEventListener("click", timeSub4);
     answerB.addEventListener("click", timeSub4);
-    answerC.addEventListener("click", timeSub4);
+    answerC.addEventListener("click", scoreAdd4);
     answerD.addEventListener("click", timeSub4);
 };
 
@@ -237,32 +237,32 @@ var question5 = function() {
     quiz5.appendChild(quizHolder);
 
     var question5 = document.createElement("h3");
-    question5.textContent = "Here's the fifth question about js";
+    question5.textContent = "Which of these is the proper symbol to use when endiing a line?";
     question5.className = "question-title";
     quizHolder.appendChild(question5);
 
     var answerA = document.createElement("button");
-    answerA.textContent = "correct answer";
+    answerA.textContent = ".";
     answerA.className = "answer-btn";
     quizHolder.appendChild(answerA);
 
     var answerB = document.createElement("button");
-    answerB.textContent = "wrong answer";
+    answerB.textContent = ";";
     answerB.className = "answer-btn";
     quizHolder.appendChild(answerB);
 
     var answerC = document.createElement("button");
-    answerC.textContent = "wrong answer";
+    answerC.textContent = ":";
     answerC.className = "answer-btn";
     quizHolder.appendChild(answerC);
 
     var answerD = document.createElement("button");
-    answerD.textContent = "wrong answer";
+    answerD.textContent = ")";
     answerD.className = "answer-btn";
     quizHolder.appendChild(answerD);
 
-    answerA.addEventListener("click", scoreAdd5);
-    answerB.addEventListener("click", timeSub5);
+    answerA.addEventListener("click", timeSub5);
+    answerB.addEventListener("click", scoreAdd5);
     answerC.addEventListener("click", timeSub5);
     answerD.addEventListener("click", timeSub5);
 }
