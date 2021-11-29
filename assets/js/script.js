@@ -12,6 +12,8 @@ var score = 0;
 var initials = document.querySelector('#initial-hold');
 var subBtn = document.querySelector('#sub-btn');
 
+highScoreList = JSON.parse(localStorage.getItem("info"));
+
 //make a start button
 var makeStartBtn = function() {
     var startBtnEl = document.createElement("button");
@@ -285,21 +287,25 @@ var endQuiz = function() {
 }
 
 let scoreSub = function() {
-    console.log(initials.value);
     let playerInfo = {
         playerInitials: initials.value,
         playerScore: score
     };
     
-    localStorage.setItem("info", JSON.stringify(playerInfo));
+    if (highScoreList == null) {
+        highScoreList = []
+        highScoreList.push(playerInfo);
+        localStorage.setItem("info", JSON.stringify(highScoreList));
+    }
+    else {
+        highScoreList.push(playerInfo);
+        localStorage.setItem("info", JSON.stringify(highScoreList));
+    }
     //localStorage.setItem("final-score", score);
     initials.classList.add("initials");
     subBtn.classList.add("initials");
-    console.log(playerInfo);
     
 };
-
-
 
 makeStartBtn();
 
